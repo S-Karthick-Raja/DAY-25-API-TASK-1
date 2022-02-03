@@ -1,12 +1,12 @@
-.container{
-    margin:0 auto;
-    text-align: center;
+.container {
+  margin: 0 auto;
+  text-align: center;
 }
-img{
-    width:200px;
-    height:200px;
-    object-fit:cover;
-    background: rgb(158, 158, 158);
-    margin:0.25rem 0.25rem 0.25rem 0.25rem;
-    border-radius: 0.5rem;
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background: rgb(158, 158, 158);
+  margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 0.5rem;
 }
