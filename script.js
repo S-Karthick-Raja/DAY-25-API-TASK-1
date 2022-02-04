@@ -1,12 +1,9 @@
-fetch("https://61921f06aeab5c0017105d5e.mockapi.io/Cats")
-  .then((data) => data.json())
-  // upload the data to html
+async function GetData() {
+  const dataFetch = await fetch("https://meowfacts.herokuapp.com/");
+  const data = await dataFetch.json();
 
-  // there is no images for some data in api
-  .then((cats) =>
-    cats.forEach((data) => {
-      const flags = document.querySelector(".row");
-      flags.innerHTML += ` 
-       <img src="${data.avatar}" alt="cats"> `;
-    })
-  );
+  const body = document.querySelector(".quotes");
+  body.innerHTML = data.data;
+}
+
+GetData();

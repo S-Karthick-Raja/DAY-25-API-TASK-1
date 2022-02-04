@@ -1,12 +1,71 @@
-.container {
-  margin: 0 auto;
-  text-align: center;
+body {
+  margin: 0px;
+  background-image: url("https://www.savoringthegood.com/wp-content/uploads/2020/04/kitten-with-pink-background-zoom-virtual-background.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
 }
-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  background: rgb(158, 158, 158);
-  margin: 0.25rem 0.25rem 0.25rem 0.25rem;
-  border-radius: 0.5rem;
+
+.mainCntr {
+  width: 768px;
+  height: 649px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+
+.quotesCntr > p {
+  position: absolute;
+  top: 110px;
+  text-align: center;
+  width: 341px;
+  height: 300px;
+  overflow: overlay;
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  left: 45px;
+  padding: 0px 25px;
+}
+
+.quotesCntr > button {
+  position: absolute;
+  margin-top: 50px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.78);
+  color: white;
+  height: 40px;
+  width: 125px;
+}
+
+@media (max-width: 768px) {
+  .mainCntr {
+    width: 425px;
+  }
+  .catPic {
+    object-position: right;
+  }
+  .quotesCntr > button {
+    left: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainCntr {
+    min-width: 425px;
+  }
+
+  body {
+    justify-content: unset;
+  }
+}
+
+@media (max-height: 649px) {
+  body {
+    align-items: unset;
+  }
 }
